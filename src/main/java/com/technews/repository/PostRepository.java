@@ -1,12 +1,14 @@
 package com.technews.repository;
 
-import com.technews.model.Comment;
+import com.technews.model.Post;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface CommentRespository extends JpaRepository<Comment, Integer> {
-    List<Comment> findAllCommentsByPostId(int id);
+public interface PostRepository extends JpaRepository<Post, Integer> {
+
+    List<Post> findAllPostsByUserId(Integer id) throws Exception;
+
 }
