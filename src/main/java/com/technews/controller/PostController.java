@@ -6,11 +6,12 @@ import com.technews.model.Vote;
 import com.technews.repository.PostRepository;
 import com.technews.repository.UserRepository;
 import com.technews.repository.VoteRepository;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
+//import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
